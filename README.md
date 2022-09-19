@@ -4,7 +4,7 @@
 Creating a website for CU Cornhole Club
 
 ## Members
-Connor Jameson
-Chi Chi Kari
-Brittan Lutomski
+Connor Jameson <br/>
+Chi Chi Kari <br/>
+Brittan Lutomski <br/>
 Philip Szeremeta
