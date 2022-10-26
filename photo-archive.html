@@ -7,7 +7,7 @@
     <link href="css/index.css" rel="stylesheet">
     
   </head>
-  <body>
+  <body style="background-color:white">
     <div class="container">
       <a class="skip-link" href="#main-content">Skip Navigation</a>
       <header>
@@ -31,13 +31,14 @@
           <p>P</p>
         </section>
         <div class="container" style="text-align: center; margin-top: 5em;">
+
           <!-- Image to be enlarged and onclick() function call-->
           <img
             src=
             "https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png"
             onmouseover="enlargeImg()"
             onmouseout="resetImg()"
-            onclick="expand(this);" alt="" 
+            onclick="fullScreen()" 
 
             id="img1"
           />
@@ -61,6 +62,19 @@
             img.style.transform = "scale(1)";
             img.style.transition = "transform 0.25s ease";
           }
+          // Get Picture to Full Screen
+          function fullScreen() {
+            /*
+            var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+            var picWidth = img.naturalWidth
+            var temp = width/picWidth
+            img.style.transform = "scale({temp})";
+            img.style.transition = "transform 0.25s ease";
+            */
+            img.requestFullscreen()
+          }
+            
+          
         </script>
       </body>
       </main>
