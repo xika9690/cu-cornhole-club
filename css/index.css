@@ -1,25 +1,16 @@
 /* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> */
 
-body{
-  background: yellow;
-  font-family: sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-}
-h1, h2, h3{
-  font-family: serif;
-  font-weight: normal;
-  /* padding-bottom: .6em; */
-}
-h2{
-  font-size: 1.25em;
-}
-h3{
-  font-size: 1.1em;
-}
-p{
-  margin-bottom: 1.8em;
-  line-height: 1.8em;
+/* Hide only visually, but have it available for screen readers: */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .skip-link{
@@ -31,29 +22,42 @@ p{
   transform: translateY(-200%);
 }
 .skip-link:focus{
-  transform: translateY(-100%);
+  transform: translateY(-50%);
 }
 .skip-link{
   /* same as before */
   transition: transform 0.3s;
 }
 
+body{
+  /* background: yellow; */
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+h1, h2, h3{
+  font-family: serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+h2{
+  font-size: 1.25em;
+}
+h3{
+  font-size: 1.1em;
+}
+p{
+  /* margin-bottom: 1.8em; */
+  line-height: 1.8em;
+}
+
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  background: lightsalmon;
-  display: grid;
+  /* background: lightsalmon; */
   width: 100vw;
   height: 100vh;
-  /* grid-template-columns:
-  1fr 2fr 1fr;
-  grid-template-areas:
-  "heady  heady heady"
-  "navvy  navvy navvy"
-  "aside1 mainy aside2"
-  "aside1 mainy aside2"
-  "aside1 mainy aside2"
-  "footy  footy footy"; */
 }
 
 nav ul{
