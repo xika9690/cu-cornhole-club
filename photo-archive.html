@@ -30,8 +30,9 @@
           <h2>Club Photos</h2>
           <p>P</p>
         </section>
-        <div class="container" style="text-align: left; margin-top: 5em;">
-          <img
+        <div class="row">
+          <div class="column">
+            <img
             src=
             "photo1.jpg"
             
@@ -39,38 +40,30 @@
             onmouseover="enlargeImg(id)"
             onmouseout="resetImg(id)"
             onclick="fullScreen(id)" 
-          />
-        </div>
-
-        <div class="container" style="text-align: center; margin-top: 5em;">
-
-          <!-- Image to be enlarged and onclick() function call-->
-          
-          <img
-            src=
+            style="width:100%"
+            />
+          </div>
+          <div class="column">
+            <img src=
             "https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png"
 
             id="img2"
             onmouseover="enlargeImg(id)"
             onmouseout="resetImg(id)"
             onclick="fullScreen(id)" 
-          />
-          
-        </div>
-
-        <div class="container" style="text-align: right; margin-top: 5em;">
-
-          <!-- Image to be enlarged and onclick() function call-->
-          <img
-            src=
+            style="width:100%">
+          </div>
+          <div class="column">
+            <img src=
             "photo2.jpg"
 
             id="img3"
             onmouseover="enlargeImg(id)"
             onmouseout="resetImg(id)"
-            onclick="fullScreen(id)" 
-          />
-        </div>
+            onclick="fullScreen(id)"
+            style="width:100%">
+          </div>
+        </div> 
      
         <!-- script to set display property -->
         <script>
