@@ -30,9 +30,7 @@
           <h2>Club Photos</h2>
           <p>P</p>
         </section>
-        <div class="container" style="text-align: center; margin-top: 5em;">
-
-          <!-- Image to be enlarged and onclick() function call-->
+        <div class="container" style="text-align: left; margin-top: 5em;">
           <img
             src=
             "photo1.jpg"
@@ -42,6 +40,12 @@
 
             id="img1"
           />
+        </div>
+
+        <div class="container" style="text-align: center; margin-top: 5em;">
+
+          <!-- Image to be enlarged and onclick() function call-->
+          
           <img
             src=
             "https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png"
@@ -51,6 +55,24 @@
 
             id="img2"
           />
+          
+        </div>
+
+        <div class="container" style="text-align: left; margin-top: 5em;">
+          <img
+            src=
+            "photo1.jpg"
+            onmouseover="enlargeImg()"
+            onmouseout="resetImg()"
+            onclick="fullScreen()" 
+
+            id="img1"
+          />
+        </div>
+
+        <div class="container" style="text-align: right; margin-top: 5em;">
+
+          <!-- Image to be enlarged and onclick() function call-->
           <img
             src=
             "photo2.jpg"
@@ -59,38 +81,6 @@
             onclick="fullScreen()" 
 
             id="img3"
-          />
-        </div>
-
-        <div class="container" style="text-align: center; margin-top: 5em;">
-
-          <!-- Image to be enlarged and onclick() function call-->
-          <img
-            src=
-            "photo1.jpg"
-            onmouseover="enlargeImg()"
-            onmouseout="resetImg()"
-            onclick="fullScreen()" 
-
-            id="img4"
-          />
-          <img
-            src=
-            "https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png"
-            onmouseover="enlargeImg()"
-            onmouseout="resetImg()"
-            onclick="fullScreen()" 
-
-            id="img5"
-          />
-          <img
-            src=
-            "photo2.jpg"
-            onmouseover="enlargeImg()"
-            onmouseout="resetImg()"
-            onclick="fullScreen()" 
-
-            id="img6"
           />
         </div>
      
