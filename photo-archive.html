@@ -58,18 +58,6 @@
           
         </div>
 
-        <div class="container" style="text-align: left; margin-top: 5em;">
-          <img
-            src=
-            "photo1.jpg"
-            onmouseover="enlargeImg()"
-            onmouseout="resetImg()"
-            onclick="fullScreen()" 
-
-            id="img1"
-          />
-        </div>
-
         <div class="container" style="text-align: right; margin-top: 5em;">
 
           <!-- Image to be enlarged and onclick() function call-->
@@ -104,13 +92,7 @@
           }
           // Get Picture to Full Screen
           function fullScreen() {
-            /*
-            var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-            var picWidth = img.naturalWidth
-            var temp = width/picWidth
-            img.style.transform = "scale({temp})";
-            img.style.transition = "transform 0.25s ease";
-            */
+
             img.requestFullscreen()
           }
             
