@@ -16,13 +16,13 @@
       <nav>
         <h2 class="sr-only">Navigation</h2>
         <ul>
-          <li><a href="index.html">Homepage</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="merch.html">Merch</a></li>
-          <li><a href="#">Photo Archive</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="email-sign-up.html">Email Sign Up</a></li>
-          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="index.html" class="nav-text">Homepage</a></li>
+          <li><a href="schedule.html" class="nav-text">Schedule</a></li>
+          <li><a href="merch.html" class="nav-text">Merch</a></li>
+          <li><a href="#" class="nav-text">Photo Archive</a></li>
+          <li><a href="faq.html" class="nav-text">FAQ</a></li>
+          <li><a href="email-sign-up.html" class="nav-text">Email Sign Up</a></li>
+          <li><a href="about-us.html" class="nav-text">About Us</a></li>
         </ul>
       </nav>
       <main id="main-content">
@@ -34,13 +34,13 @@
           <div class="column">
             <img
             src=
-            "photo1.jpg"
-            
+            "img/photo1.jpg"
+
             id="img1"
             position: absolute;
             onmouseover="enlargeImg(id)"
             onmouseout="resetImg(id)"
-            onclick="fullScreen(id)" 
+            onclick="fullScreen(id)"
             style="width:100%"
             />
           </div>
@@ -52,12 +52,12 @@
             position: absolute;
             onmouseover="enlargeImg(id)"
             onmouseout="resetImg(id)"
-            onclick="fullScreen(id)" 
+            onclick="fullScreen(id)"
             style="width:100%">
           </div>
           <div class="column">
             <img src=
-            "photo2.jpg"
+            "img/photo2.jpg"
 
             id="img3"
             position: absolute;
@@ -66,18 +66,18 @@
             onclick="fullScreen(id)"
             style="width:100%">
           </div>
-        </div> 
+        </div>
         <div class="row">
           <div class="column">
             <img
             src=
-            "photo1.jpg"
-            
+            "img/photo1.jpg"
+
             id="img1"
             position: absolute;
             onmouseover="enlargeImg(id)"
             onmouseout="resetImg(id)"
-            onclick="fullScreen(id)" 
+            onclick="fullScreen(id)"
             style="width:100%"
             />
           </div>
@@ -89,12 +89,12 @@
             position: absolute;
             onmouseover="enlargeImg(id)"
             onmouseout="resetImg(id)"
-            onclick="fullScreen(id)" 
+            onclick="fullScreen(id)"
             style="width:100%">
           </div>
           <div class="column">
             <img src=
-            "photo2.jpg"
+            "img/photo2.jpg"
 
             id="img3"
             position: absolute;
@@ -103,13 +103,13 @@
             onclick="fullScreen(id)"
             style="width:100%">
           </div>
-        </div> 
-     
+        </div>
+
         <!-- script to set display property -->
         <script>
           // Get the img object using its Id
-          
-          
+
+
 
           // Function to increase image size
           function enlargeImg(id) {
@@ -119,7 +119,7 @@
             img.style.transform = "scale(1.5)";
             // Animation effect
             img.style.transition = "transform 0.25s ease";
-            
+
           }
           // Function to reset image size
           function resetImg(id) {
@@ -128,7 +128,7 @@
             img.style.zIndex = "-1";
             img.style.transform = "scale(1)";
             img.style.transition = "transform 0.25s ease";
-            
+
           }
           // Get Picture to Full Screen
           function fullScreen(id) {
@@ -136,8 +136,8 @@
             img = document.getElementById(id);
             img.requestFullscreen()
           }
-            
-          
+
+
         </script>
       </body>
       </main>

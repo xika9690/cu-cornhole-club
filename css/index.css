@@ -30,16 +30,17 @@
 }
 
 body{
-  background: white; 
+  background: white;
   font-family: sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
 }
 h1, h2, h3{
   font-family: serif;
   font-weight: normal;
   font-size: 1.5em;
   padding-bottom: 0.5em;
+  text-align: center;
 }
 h2{
   font-size: 1.25em;
@@ -60,6 +61,9 @@ p{
   height: 100vh;
 }
 
+nav{
+  background-color: black;
+}
 nav ul{
   display: flex;
   flex-flow: row nowrap;
@@ -68,6 +72,12 @@ nav ul{
 nav ul li{
   list-style: none;
 }
+
+.nav-text{color: white; text-decoration: none;}
+.nav-text:Link{color: white;}
+.nav-text:Visted{color: white;}
+.nav-text:Hover{color: white;}
+.nav-text:Active{color: white;}
 
 .row {
   display: flex;
