@@ -29,6 +29,118 @@
         <section id="intro">
           <h2>Club Photos</h2>
         </section>
+<<<<<<< HEAD
+        <div class="row">
+          <div class="column">
+            <img
+            src=
+            "img/photo1.jpg"
+
+            id="img1"
+            position: absolute;
+            onmouseover="enlargeImg(id)"
+            onmouseout="resetImg(id)"
+            onclick="fullScreen(id)"
+            style="width:100%"
+            />
+          </div>
+          <div class="column">
+            <img src=
+            "https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png"
+
+            id="img2"
+            position: absolute;
+            onmouseover="enlargeImg(id)"
+            onmouseout="resetImg(id)"
+            onclick="fullScreen(id)"
+            style="width:100%">
+          </div>
+          <div class="column">
+            <img src=
+            "img/photo2.jpg"
+
+            id="img3"
+            position: absolute;
+            onmouseover="enlargeImg(id)"
+            onmouseout="resetImg(id)"
+            onclick="fullScreen(id)"
+            style="width:100%">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img
+            src=
+            "img/photo1.jpg"
+
+            id="img1"
+            position: absolute;
+            onmouseover="enlargeImg(id)"
+            onmouseout="resetImg(id)"
+            onclick="fullScreen(id)"
+            style="width:100%"
+            />
+          </div>
+          <div class="column">
+            <img src=
+            "https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png"
+
+            id="img2"
+            position: absolute;
+            onmouseover="enlargeImg(id)"
+            onmouseout="resetImg(id)"
+            onclick="fullScreen(id)"
+            style="width:100%">
+          </div>
+          <div class="column">
+            <img src=
+            "img/photo2.jpg"
+
+            id="img3"
+            position: absolute;
+            onmouseover="enlargeImg(id)"
+            onmouseout="resetImg(id)"
+            onclick="fullScreen(id)"
+            style="width:100%">
+          </div>
+        </div>
+
+        <!-- script to set display property -->
+        <script>
+          // Get the img object using its Id
+
+
+
+          // Function to increase image size
+          function enlargeImg(id) {
+            // Set image size to 1.5 times original
+            img = document.getElementById(id);
+            img.style.zIndex = "1";
+            img.style.transform = "scale(1.5)";
+            // Animation effect
+            img.style.transition = "transform 0.25s ease";
+
+          }
+          // Function to reset image size
+          function resetImg(id) {
+            // Set image size to original
+            img = document.getElementById(id);
+            img.style.zIndex = "-1";
+            img.style.transform = "scale(1)";
+            img.style.transition = "transform 0.25s ease";
+
+          }
+          // Get Picture to Full Screen
+          function fullScreen(id) {
+
+            img = document.getElementById(id);
+            img.requestFullscreen()
+          }
+
+
+        </script>
+      </body>
+=======
           <div id="Gallary">
 
           </div>
@@ -36,6 +148,7 @@
 
         <script type = "text/javascript" src = "js/functions.js"></script>
 
+>>>>>>> 3afcc9f062c3925b7412bf2de51c4ab2e3121ada
       </main>
     </div>
   </body>
