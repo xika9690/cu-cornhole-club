@@ -65,3 +65,102 @@ window.addEventListener(
   },
   false
 );
+
+// Function to increase image size
+function enlargeImg(id) {
+  // Set image size to 1.5 times original
+  var div = document.getElementById(id).parentElement;;
+
+  div.style.zIndex = "1";
+  var img = document.getElementById(id)
+  img.style.transform = "scale(1.5)";
+  img.style.transition = "transform 0.25s ease";
+  
+}
+// Function to reset image size
+function resetImg(id) {
+  // Set image size to original
+  var div = document.getElementById(id).parentElement;;
+  div.style.zIndex = "0";
+
+  var img = document.getElementById(id);
+  img.style.transform = "scale(1)";
+  img.style.transition = "transform 0.25s ease";
+  
+}
+// Get Picture to Full Screen
+function fullScreen(id) {
+
+  var img = document.getElementById(id);
+  img.requestFullscreen()
+}
+
+function genScreen(){
+  //Change this for more photos
+  var len = 8;
+  var imgarr = [];
+  for (var i = 1; i<=len; i++){
+    imgarr.push(i.toString());
+  }
+
+  console.log(imgarr);
+
+  var content = "";
+  var start = 1;
+  var last = 3 - len % 3
+  if (last == 3) {
+    last = 0;
+  }
+  var runlen = len + last;
+  for (var i = 0; i < runlen; i++) {
+    if (((i % 3) == 0) && start == 1) {
+      content +=`<div class="row">
+      <div class="column">
+        <img src= "photo` + imgarr[i] + `.jpg"
+        
+        id="photo` + imgarr[i] + `"
+        position: relative;
+        onmouseenter="enlargeImg(id)"
+        onmouseleave="resetImg(id)"
+        onclick="fullScreen(id)" 
+        style="width:100%">
+      </div>`
+      start = 0;
+    }
+    else if ((i % 3) == 0) {
+      content +=`</div>
+      <div class="row">
+      <div class="column">
+        <img src= "photo` + imgarr[i] + `.jpg"
+        
+        id="photo` + imgarr[i] + `"
+        position: relative;
+        onmouseenter="enlargeImg(id)"
+        onmouseleave="resetImg(id)"
+        onclick="fullScreen(id)" 
+        style="width:100%">
+      </div>`
+    }
+    else if (i >= len) {
+      content +=`<div class="column"
+        style="width:100%">
+      </div>`
+    }
+    else {
+      content +=`<div class="column">
+        <img src= "photo` + imgarr[i] + `.jpg"
+
+        id="photo` + imgarr[i] + `"
+        position: relative;
+        onmouseenter="enlargeImg(id)"
+        onmouseleave="resetImg(id)"
+        onclick="fullScreen(id)" 
+        style="width:100%">
+      </div>`
+    }
+  }  
+  content += `</div>`
+  return content;
+}
+document.getElementById("Gallary").innerHTML=genScreen();
+
