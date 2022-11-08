@@ -94,3 +94,73 @@ function fullScreen(id) {
   var img = document.getElementById(id);
   img.requestFullscreen()
 }
+
+function genScreen(){
+  //Change this for more photos
+  var len = 8;
+  var imgarr = [];
+  for (var i = 1; i<=len; i++){
+    imgarr.push(i.toString());
+  }
+
+  console.log(imgarr);
+
+  var content = "";
+  var start = 1;
+  var last = 3 - len % 3
+  if (last == 3) {
+    last = 0;
+  }
+  var runlen = len + last;
+  for (var i = 0; i < runlen; i++) {
+    if (((i % 3) == 0) && start == 1) {
+      content +=`<div class="row">
+      <div class="column">
+        <img src= "photo` + imgarr[i] + `.jpg"
+        
+        id="photo` + imgarr[i] + `"
+        position: relative;
+        onmouseenter="enlargeImg(id)"
+        onmouseleave="resetImg(id)"
+        onclick="fullScreen(id)" 
+        style="width:100%">
+      </div>`
+      start = 0;
+    }
+    else if ((i % 3) == 0) {
+      content +=`</div>
+      <div class="row">
+      <div class="column">
+        <img src= "photo` + imgarr[i] + `.jpg"
+        
+        id="photo` + imgarr[i] + `"
+        position: relative;
+        onmouseenter="enlargeImg(id)"
+        onmouseleave="resetImg(id)"
+        onclick="fullScreen(id)" 
+        style="width:100%">
+      </div>`
+    }
+    else if (i >= len) {
+      content +=`<div class="column"
+        style="width:100%">
+      </div>`
+    }
+    else {
+      content +=`<div class="column">
+        <img src= "photo` + imgarr[i] + `.jpg"
+
+        id="photo` + imgarr[i] + `"
+        position: relative;
+        onmouseenter="enlargeImg(id)"
+        onmouseleave="resetImg(id)"
+        onclick="fullScreen(id)" 
+        style="width:100%">
+      </div>`
+    }
+  }  
+  content += `</div>`
+  return content;
+}
+document.getElementById("Gallary").innerHTML=genScreen();
+
