@@ -65,3 +65,32 @@ window.addEventListener(
   },
   false
 );
+
+// Function to increase image size
+function enlargeImg(id) {
+  // Set image size to 1.5 times original
+  div = document.getElementById(id).parentElement;;
+
+  div.style.zIndex = "1";
+  img = document.getElementById(id)
+  img.style.transform = "scale(1.5)";
+  img.style.transition = "transform 0.25s ease";
+  
+}
+// Function to reset image size
+function resetImg(id) {
+  // Set image size to original
+  div = document.getElementById(id).parentElement;;
+  div.style.zIndex = "0";
+
+  img = document.getElementById(id);
+  img.style.transform = "scale(1)";
+  img.style.transition = "transform 0.25s ease";
+  
+}
+// Get Picture to Full Screen
+function fullScreen(id) {
+
+  img = document.getElementById(id);
+  img.requestFullscreen()
+}
