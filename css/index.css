@@ -97,7 +97,7 @@ img{
 
 /* Create three equal columns that sits next to each other */
 .column {
-  flex: 33.33%;
+  flex: 25%;
   padding: 5px;
 }
 
