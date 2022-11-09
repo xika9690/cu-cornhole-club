@@ -113,7 +113,7 @@ function genScreen(){
   }
   var runlen = len + last;
   for (var i = 0; i < runlen; i++) {
-    if (((i % 3) == 0) && start == 1) {
+    if (((i % 4) == 0) && start == 1) {
       content +=`<div class="row">
       <div class="column">
         <img src= "img/photo` + imgarr[i] + `.jpg"
@@ -127,7 +127,7 @@ function genScreen(){
       </div>`
       start = 0;
     }
-    else if ((i % 3) == 0) {
+    else if ((i % 4) == 0) {
       content +=`</div>
       <div class="row">
       <div class="column">
