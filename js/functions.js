@@ -107,8 +107,8 @@ function genScreen(){
 
   var content = "";
   var start = 1;
-  var last = 3 - len % 3
-  if (last == 3) {
+  var last = 4 - len % 4
+  if (last == 4) {
     last = 0;
   }
   var runlen = len + last;
