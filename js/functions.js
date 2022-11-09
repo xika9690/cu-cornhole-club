@@ -116,7 +116,7 @@ function genScreen(){
     if (((i % 3) == 0) && start == 1) {
       content +=`<div class="row">
       <div class="column">
-        <img src= "photo` + imgarr[i] + `.jpg"
+        <img src= "img/photo` + imgarr[i] + `.jpg"
         
         id="photo` + imgarr[i] + `"
         position: relative;
@@ -131,7 +131,7 @@ function genScreen(){
       content +=`</div>
       <div class="row">
       <div class="column">
-        <img src= "photo` + imgarr[i] + `.jpg"
+        <img src= "img/photo` + imgarr[i] + `.jpg"
         
         id="photo` + imgarr[i] + `"
         position: relative;
@@ -148,7 +148,7 @@ function genScreen(){
     }
     else {
       content +=`<div class="column">
-        <img src= "photo` + imgarr[i] + `.jpg"
+        <img src= "img/photo` + imgarr[i] + `.jpg"
 
         id="photo` + imgarr[i] + `"
         position: relative;
