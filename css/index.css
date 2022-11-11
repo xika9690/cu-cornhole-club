@@ -1,7 +1,16 @@
 /* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> */
+*,
+* :before,
+* :after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 html, body {
   height: 100vh;
 }
+
 /* Hide only visually, but have it available for screen readers: */
 .sr-only {
   border: 0;
@@ -15,8 +24,9 @@ html, body {
   width: 1px;
 }
 
+/* skip nav */
 .skip-link{
-  background: tomato;
+  background: black;
   color: #fff;
   font-weight: 700;
   padding: 4px;
@@ -24,7 +34,7 @@ html, body {
   transform: translateY(-200%);
 }
 .skip-link:focus{
-  transform: translateY(-50%);
+  transform: translateY(-75%);
 }
 .skip-link{
   /* same as before */
@@ -37,36 +47,35 @@ body{
   font-weight: 300;
   font-size: 18px;
 }
-h1, h2, h3{
+h1, h2{
   font-family: serif;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 2.25em;
+  font-weight: bold;
   /* padding-bottom: 0.5em; */
+  margin: 24px 0px;
   text-align: center;
 }
 h2{
+  margin: 20px 0px;
   font-size: 1.25em;
 }
-h3{
-  font-size: 1.1em;
-}
 p{
-  /* margin-bottom: 1.8em; */
   line-height: 1.8em;
 }
 
 .container{
   max-width: 1280px;
   margin: 0 auto;
-  /* background: lightsalmon; */
   width: 100vw;
   height: 100vh;
 }
 
+/* nav */
 nav{
   background-color: black;
   margin-bottom: 0;
-
+  font-weight: bold;
 }
 nav ul{
   display: flex;
@@ -77,7 +86,6 @@ nav ul li{
   list-style: none;
   padding: 15px 0px;
 }
-
 .nav-text{color: white; text-decoration: none;}
 .nav-text:Link{color: white;}
 .nav-text:Visted{color: white;}
@@ -94,28 +102,63 @@ img{
   display:table;
 }
 
-
 /* Create three equal columns that sits next to each other */
 .column {
   flex: 25%;
   padding: 5px;
 }
-
 .enlarge {
 
   transition: transform 0.25s ease;
 }
-
 .enlarge:hover {
 
   transform: scale(1.5);
   z-index: 1;
 
 }
-
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+/* tablet */
+@media screen and (min-width: 641px) and (max-width: 900px){
+  nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  nav ul li{
+    list-style: none;
+    padding: 15px 35px;
+  }
+
+  /* photo archive */
+  .column {
+    flex: 50%;
+    padding: 5px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 640px){
+  nav ul{
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+  nav ul li a{
+    display: block;
+    padding: 10px 5px;
+    margin: 0px;
+    border: 1px white solid;
+  }
+
+  /* photo archive */
+  .column {
+    flex: 100%;
+    padding: 5px;
+  }
 }
