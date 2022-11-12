@@ -92,6 +92,25 @@ nav ul li{
 .nav-text:Hover{color: white;}
 .nav-text:Active{color: white;}
 
+/* merch links */
+#merch-links ul{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+#merch-links ul li{
+  list-style: none;
+  /* font-weight: bold; */
+  padding: 15px 10px;
+  background-color: #CFB87C;
+}
+.merch-text{color: black; text-decoration: none;}
+.merch-text:Link{color: black;}
+.merch-text:Visted{color: black;}
+.merch-text:Hover{color: black;}
+.merch-text:Active{color: black;}
+
+
 .row {
   display: flex;
 }
@@ -154,6 +173,18 @@ img{
     padding: 10px 5px;
     margin: 0px;
     border: 1px white solid;
+  }
+
+  /* merch links */
+  #merch-links ul{
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+  #merch-links ul li a{
+    display: block;
+    padding: 10px 5px;
+    margin: 0px;
+    border: 1px black solid;
   }
 
   /* photo archive */
