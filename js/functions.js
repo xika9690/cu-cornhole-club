@@ -97,7 +97,7 @@ function fullScreen(id) {
 
 function genScreen(){
   //Change this for more photos
-  var len = 19;
+  var len = 16;
   var imgarr = [];
   for (var i = 1; i<=len; i++){
     imgarr.push(i.toString());
