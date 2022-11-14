@@ -193,3 +193,11 @@ img{
     padding: 5px;
   }
 }
+.topStrip {
+  background-color: #CFB87C; 
+  padding: .009px;
+}
+
+.mar0 {
+  margin: 0;
+}
