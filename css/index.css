@@ -121,6 +121,8 @@ img{
   display:table;
 }
 .photo-text-top{
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
   margin-top: 25px;
 }
