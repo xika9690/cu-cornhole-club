@@ -120,8 +120,13 @@ img{
   max-width: 100%;
   display:table;
 }
-.text-center{
+.photo-text-top{
   text-align: center;
+  margin-top: 25px;
+}
+.photo-text-bot{
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 /* Create three equal columns that sits next to each other */
