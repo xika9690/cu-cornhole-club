@@ -34,7 +34,7 @@ html, body {
   transform: translateY(-200%);
 }
 .skip-link:focus{
-  transform: translateY(-75%);
+  transform: translateY(0%);
 }
 .skip-link{
   /* same as before */
@@ -58,7 +58,7 @@ h1, h2{
 }
 h2{
   margin: 20px 0px;
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 p{
   line-height: 1.8em;
@@ -124,11 +124,11 @@ img{
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 .photo-text-bot{
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 /* Create three equal columns that sits next to each other */
