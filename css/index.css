@@ -120,6 +120,9 @@ img{
   max-width: 100%;
   display:table;
 }
+.text-center{
+  text-align: center;
+}
 
 /* Create three equal columns that sits next to each other */
 .column {
@@ -194,7 +197,7 @@ img{
   }
 }
 .topStrip {
-  background-color: #CFB87C; 
+  background-color: #CFB87C;
   padding: .009px;
 }
 
