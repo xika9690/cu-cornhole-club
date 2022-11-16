@@ -100,7 +100,6 @@ nav ul li{
 }
 #merch-links ul li{
   list-style: none;
-  /* font-weight: bold; */
   padding: 15px 10px;
   background-color: #CFB87C;
 }
@@ -119,6 +118,11 @@ nav ul li{
 img{
   max-width: 100%;
   display:table;
+}
+
+/* text under photos */
+.photo-text{
+  text-align: center;
 }
 .photo-text-top{
   font-size: 1.2em;
