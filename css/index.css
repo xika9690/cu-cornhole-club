@@ -157,6 +157,16 @@ img{
   width: 50%;
 }
 
+/* Create two equal columns that sits next to each other */
+.row {
+  display: flex;
+}
+.column2 {
+  flex: 50%;
+  padding: 10px;
+}
+
+
 /* tablet */
 @media screen and (min-width: 641px) and (max-width: 900px){
   nav ul{
@@ -205,6 +215,10 @@ img{
   .column {
     flex: 100%;
     padding: 5px;
+  }
+  
+  .row {
+    display: block
   }
 }
 .topStrip {
